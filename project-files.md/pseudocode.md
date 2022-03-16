@@ -14,9 +14,9 @@
 
 # Procedures
 
-[] connect the API
+[x] connect the API
 [] create routes for the links going to other pages
-[] import react and whatever else is needed from npm
+[x] import react and whatever else is needed from npm
 
 
 [] Create a nav bar that stays at the top
@@ -53,6 +53,20 @@
 [] create a footer
     [] create copyright info and created with 
 
+# FUNCTIONALITY
+
+[] App.js file that has an App function that links the nav bar items and is the OUTLET
+[] Index.js file that has the render function
+[] Index.html that just has the needed HTML and the <div> named App
+[x] connect API-import axios in a data.js file
+[] display a logo in header
+[] display hero pic
+[] display pics for each food item
+[] make the list a drop down one so that each dish only shows the name and price but clicking it makes it show the description as well
+[] create links for header and connect them to individual pages
+[] make header stay where it is at the top
+[] create local storage that sets the storage of JSON info
+[] useEffect for going from page to page and the drop downs
 
 # Pseudo
 
@@ -96,17 +110,3 @@ Main div
         - this is only going to display the copyright info, the number again, and the tech it was created with
         
 
-# FUNCTIONALITY
-
-[] App.js file that has an App function that links the nav bar items and is the OUTLET
-[] Index.js file that has the render function
-[] Index.html that just has the needed HTML and the <div> named App
-[] connect API-import axios in a data.js file
-[] display a logo in header
-[] display hero pic
-[] display pics for each food item
-[] make the list a drop down one so that each dish only shows the name and price but clicking it makes it show the description as well
-[] create links for header and connect them to individual pages
-[] make header stay where it is at the top
-[] create local storage that sets the storage of JSON info
-[] useEffect for going from page to page and the drop downs
