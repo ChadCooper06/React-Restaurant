@@ -26,9 +26,18 @@
         [] home
         [] about
 
-[] Home Page that takes back to the main where the hero and the specials are
+    [] Home Page that takes back to the main where the hero and the specials are
 
-[] About Page that shows the contact and location as well as theme or philosophy
+    [] About Page that shows the contact and location as well as theme or philosophy
+
+    [] Menu Page that has the below on it
+            [] full menu - list or cards
+                [] pic
+                [] dish name
+                [] price
+                [] description
+            [] sides -stretch
+            [] drinks -stretch
 
 [] create a main div that has the other elements
     [] info box
@@ -40,14 +49,6 @@
     [] menu section
         [] today's specials as a simple list with no pics-3 chosen at random or 3 per day and separate each day into another file to pull from
 
-[] Menu Page that has the below on it
-        [] full menu - list or cards
-            [] pic
-            [] dish name
-            [] price
-            [] description
-        [] sides -stretch
-        [] drinks -stretch
 
 [] create a footer
     [] create copyright info and created with 
@@ -94,3 +95,18 @@ Main div
     - footer at the very end of the page--doesn't move with the page
         - this is only going to display the copyright info, the number again, and the tech it was created with
         
+
+# FUNCTIONALITY
+
+[] App.js file that has an App function that links the nav bar items and is the OUTLET
+[] Index.js file that has the render function
+[] Index.html that just has the needed HTML and the <div> named App
+[] connect API-import axios in a data.js file
+[] display a logo in header
+[] display hero pic
+[] display pics for each food item
+[] make the list a drop down one so that each dish only shows the name and price but clicking it makes it show the description as well
+[] create links for header and connect them to individual pages
+[] make header stay where it is at the top
+[] create local storage that sets the storage of JSON info
+[] useEffect for going from page to page and the drop downs
