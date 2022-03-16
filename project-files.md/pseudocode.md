@@ -22,8 +22,8 @@
 [] Create a nav bar that stays at the top
     [] create a name
     [] create links to
-        [] menu
-        [] home
+        [x] menu
+        [x] home
         [] about
 
     [] Home Page that takes back to the main where the hero and the specials are
@@ -55,9 +55,9 @@
 
 # FUNCTIONALITY
 
-[] App.js file that has an App function that links the nav bar items and is the OUTLET
+[x] App.js file that has an App function that links the nav bar items and is the OUTLET
 [] Index.js file that has the render function
-[] Index.html that just has the needed HTML and the <div> named App
+[x] Index.html that just has the needed HTML and the <div> named App
 [x] connect API-import axios in a data.js file
 [] display a logo in header
 [] display hero pic
