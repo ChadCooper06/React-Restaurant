@@ -16,8 +16,8 @@
 
 [] connect the API
 [] create routes for the links going to other pages
-[] import react and whatever else is needed
-[] 
+[] import react and whatever else is needed from npm
+
 
 [] Create a nav bar that stays at the top
     [] create a name
@@ -25,6 +25,10 @@
         [] menu
         [] home
         [] about
+
+[] Home Page that takes back to the main where the hero and the specials are
+
+[] About Page that shows the contact and location as well as theme or philosophy
 
 [] create a main div that has the other elements
     [] info box
@@ -35,6 +39,8 @@
 
     [] menu section
         [] today's specials as a simple list with no pics-3 chosen at random or 3 per day and separate each day into another file to pull from
+
+[] Menu Page that has the below on it
         [] full menu - list or cards
             [] pic
             [] dish name
@@ -49,7 +55,7 @@
 
 # Pseudo
 
-Everything will be rendered dynamically in one <div> called App
+Everything will be rendered dynamically using React in one <div> called App
 
 axios get from the given API for the information needed to be shown (items, cuisines, prices, descriptions)
 
@@ -57,7 +63,7 @@ axios get from the given API for the information needed to be shown (items, cuis
 
 Nav bar is static element on the page that stays at the top while scrolling
     - has links in it to the various pages (home, menu, about)--positioned more to the right
-        - home--takes you to the main homepage(initial state)
+        - home--takes you to the main page(initial state)
         - menu--takes you to the full menu of 15-20 items
         - about--takes you to the about us page where the contact info and overall theme of the restaurant is listed
     - has logo (maybe)--if so this will be created or just found image(maybe just a single letter of the first letter of the name)
@@ -78,7 +84,7 @@ Main div
 
         //this may be on its own page and not the main one so the main can just hold the specials
         - displays the menu obtained via API call in a list or table format
-            - dish pic
+            - dish pic for each dish
             - dish name
             - dish description
             - dish price
