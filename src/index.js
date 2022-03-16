@@ -1,14 +1,17 @@
 import React from 'react';
-import { render } from 'react-router-dom';
-//import ReactDOM from 'react-dom';
-//import './index.css';
-import App from './App';
+import { render } from 'react-dom';
 import {
   BrowserRouter,
   Route,
   Routes
-} from react-router-dom
+} from 'react-router-dom';
 
+import App from './App';
+import Dishes from '/Routes/Menu';
+import Contacts from '/Routes/About';
+
+import './index.css';
+//import ReactDOM from 'react-dom';
 //import { render } from '@testing-library/react';
 
 const rootElement = document.getElementById("app");
