@@ -1,10 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { getLocalStorage, setLocalStorage } from '/localStorage';
+import { getLocalStorage, setLocalStorage } from './src/localStorage';
 import { getData } from '/data';
 
 export default function Dish() {
   const ENDPOINT = 'Dishes';
   const [titles, setDishes] = useState([]);
+
+  useEffect(() => {
+    let data = getLocalStorage(ENDPOINT);
+    if (data.length > 0) {
+      setDishes(data);
+    } else {
+      getData(ENDPOINT)
+        .then((data) => {
+          setDishes(data);
+          setLocalStorage(ENDPOINT, data);
+        })
+    }
+  }, []);
 
   return (
     <main style={{ padding: "1rem 0" }}>
@@ -20,7 +33,7 @@ export default function Dish() {
               </tr>
             </thead>
             <tbody>
-              {titles.map((title) => <Dish key={title.id} contact={title} />)}
+              {titles.map((title) => <Dish key={title.id} title={title} />)}
             </tbody>
           </table>
         </div>
