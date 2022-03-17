@@ -8,16 +8,17 @@ import {
 
 import './index.css';
 import App from './App';
-import Menu from './routes/Menu';
+import Menu from './Routes/Menu';
 
 const rootElement = document.getElementById('root')
+
 ReactDOM.render(
   
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="menu" element={<Menu />} />
-      </Route>
+      <Route path="/" element={<App />} />
+      <Route path="Menu" element={<Menu />} />
+      
     </Routes>
   </BrowserRouter>,
   rootElement
