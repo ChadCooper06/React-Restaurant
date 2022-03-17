@@ -12,16 +12,13 @@ function App() {
         }}
         >
         <Link to="/">Home</Link> |{" "}
-        <Link to="/menu">Menu</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
+        <Link to="/dishes">Menu</Link> |{" "}
+        
       </nav>
       <Outlet />
     </div>
   );
 }
-        //<img src={logo} className="App-logo" alt="logo" />
-        //<p>
-        //  Edit <code>src/App.js</code> and save to reload.
-        
+
 
 export default App;
