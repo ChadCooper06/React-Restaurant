@@ -26,18 +26,12 @@ export default function Dishes() {
       <div className="container">
         <div className="row justify-content-center text-center">
           <h2 className='mb-4'>Menu Items</h2>
-          <table className="table table-hover" style={{ maxwidth: '600px' }}>
-            <thead>
-              <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
+          <div className="table table-hover" style={{ maxwidth: '600px' }}>
+            
+            <div>
               {items.map((item, idx) => <Dish key={item.id} idx={idx} item={item} />)}
-            </tbody>
-          </table>
+            </div>
+          </div>
         </div>
       </div>
     </main>

@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+.hero-image{
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    color: white;
+    align-content: center;
+    justify-content: center;
+}
