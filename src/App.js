@@ -27,10 +27,10 @@ export default function App() {
             
             }}>AC</h1>
         </div>
-        <div>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/Menu">Menu</Link> |{" "}
-          <Link to="/Specials">Specials</Link> |{" "}
+        <div className='buttons'>
+          <Link to="/"><button>Home</button></Link> {" "}
+          <Link to="/Menu"><button>Menu</button></Link> {" "}
+          <Link to="/Specials"><button>Specials</button></Link> {" "}
 
         </div>
         </>
@@ -50,14 +50,14 @@ function Hero() {
         <div 
         className="hero-text"
         style={{
-          height: '60vh',
+          height: '75vh',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           color: 'white',
           backgroundImage: 'url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")',
           margin: '0',
-        
+          textAlign: 'center',
         
         }}>
           <h1 style={{margin: '0'}}>Awesome Cuisine</h1>
