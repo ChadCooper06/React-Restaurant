@@ -14,7 +14,7 @@ export default function App() {
           <h1>AC</h1>
         <Link to="/">Home</Link> |{" "}
         <Link to="/Menu">Menu</Link> |{" "}
-        <Outlet />
+        
       </nav>
       <div className="hero-image">
         <div 
