@@ -5,10 +5,12 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
+
 import './index.css';
 import App from './App';
 import Menu from './routes/Menu';
 
+const rootElement = document.getElementById('root')
 ReactDOM.render(
   
   <BrowserRouter>
@@ -18,5 +20,5 @@ ReactDOM.render(
       </Route>
     </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
+  rootElement
 );
