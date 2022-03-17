@@ -42,7 +42,7 @@ export default function Dish() {
   );
 }
 
-const Dish = ({ title }) => {
+const Dish = ({ }) => {
   return (
     <tr className='col-3'>
       <td>Text</td>
