@@ -10,11 +10,11 @@ export default function Specials() {
   useEffect(() => {
     let data = getLocalStorage(URL);
     if (data.length > 0) {
-      setItems(data);
+      setItems(0, 20);
     } else {
       getData(URL)
         .then((data) => {
-          setItems(data);
+          setItems(0, 20);
           setLocalStorage(URL, data);
         })
     }
@@ -36,23 +36,15 @@ export default function Specials() {
 }
 
 const Special = ({ item }) => {
-    for(let i=0; i<item.length; i++)
-    if(item.length < 5) {
-                item[Math.floor[Math.random()*item.length]];
-                return (
-                    <div className='card col-3'>
-                        <div className="card-body">
-                            <h2 className='card-title'>{item.title}</h2>
-                            <div><strong>Price: {item.price/2}</strong></div>
-                            <div><strong>Description: {item.description}</strong></div>
-                            
-                        </div>
-                    </div>
-                )
-    } 
-    return (
-        <div>
-            <h2>No Specials today</h2>
+    
+      return (
+      <div className='card col-3'>
+        <div className="card-body">
+          <h2 className='card-title'>{item.title}</h2>
+          <div><strong>{item.description}</strong></div>
         </div>
-    )
+      </div>
+        )
+     
+    
 }

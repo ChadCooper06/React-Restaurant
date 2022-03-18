@@ -13,10 +13,9 @@ export default function App() {
         flexDirection: 'row',
         flexWrap: 'nowrap',
         justifyContent: 'space-between',
-        justifyContent: 'space-around',
         position: 'relative',
         width: '100%',
-        backgroundColor: '#eab37a',
+        backgroundColor: '#E5A561',
         margin: '0',
       }}
       >
@@ -27,7 +26,7 @@ export default function App() {
             fontSize: '35px',
             fontWeight: 'bold',
             alignSelf: 'start',
-            textShadow: '1px 1px grey',
+            textShadow: '1px 1px white',
             color: '#FF372D',
             margin: '10px',
             }}>AC</h1>
@@ -56,29 +55,3 @@ export default function App() {
     </>
   );
 }
-    
-
-// function Hero() {
-//   return (
-//   <div className="hero-image">
-//         <div 
-//         className="hero-text"
-//         style={{
-//           height: '75vh',
-//           backgroundPosition: 'center',
-//           backgroundSize: 'cover',
-//           backgroundRepeat: 'no-repeat',
-//           color: 'white',
-//           backgroundImage: 'url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")',
-//           margin: '0',
-//           textAlign: 'center',
-        
-//         }}>
-//           <h1 style={{margin: '0'}}>Awesome Cuisine</h1>
-//           <h2>348 E Main St Lexington KY</h2>
-//             <h2>(xxx)xxx-xxxx</h2>
-//             <h2>M-F 11-9 S-S 11-10</h2>
-//         </div>
-//       </div>
-//   )
-// }
