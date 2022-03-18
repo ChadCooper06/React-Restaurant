@@ -1,5 +1,6 @@
 import React from 'react';
 
+//this is the hero at the top of the home page displaying name
 export default function Hero() {
     return (
     <div className="hero-image">
