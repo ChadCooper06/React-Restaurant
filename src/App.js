@@ -13,7 +13,6 @@ export default function App() {
         flexDirection: 'row',
         flexWrap: 'nowrap',
         justifyContent: 'space-between',
-        justifyContent: 'space-around',
         position: 'relative',
         width: '100%',
         backgroundColor: '#E5A561',
