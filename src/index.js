@@ -8,6 +8,7 @@ import {
 
 import './index.css';
 import App from './App';
+import Home from './Routes/Home';
 import Menu from './Routes/Menu.js';
 import Specials from './Routes/Specials';
 
@@ -18,8 +19,9 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
+      <Route path="Home" element={<Home />} />
       <Route path="Menu" element={<Menu />} />
-      <Route path='Specials' element={<Specials />} />
+      <Route path="Specials" element={<Specials />} />
       </Route>
     </Routes>
   </BrowserRouter>,

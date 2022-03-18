@@ -6,6 +6,7 @@ export default function Dishes() {
   
   const URL = 'https://sheltered-refuge-85246.herokuapp.com/api/json'
   const [items, setItems] = useState([]);
+  
 
   useEffect(() => {
     let data = getLocalStorage(URL);
@@ -22,11 +23,21 @@ export default function Dishes() {
   }, []);
 
   return (
-    <main style={{ padding: "1rem 0" }}>
+    <main style={{ 
+      padding: '1rem 0',
+      color: '#BFB7AA',
+      backgroundImage: 'url("https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")',
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      }}>
+        
       <div className="container">
         <div className="row justify-content-center text-center">
-          <h2 className='mb-4'>Menu Items</h2>
-          <div className="table table-hover" style={{ maxwidth: '600px' }}>
+          <h1 style={{
+            textShadow: '1px 1px white',
+          }}>Menu Items</h1>
+          <div className="list" style={{ maxwidth: '600px' }}>
             
             <div>
               {items.map((item, idx) => <Dish key={item.id} idx={idx} item={item} />)}
@@ -44,7 +55,7 @@ const Dish = ({ item }) => {
     <div className='card col-3'>
       <div className="card-body">
         <h2 className='card-title'>{item.title}</h2>
-        <div><strong>Price: {item.price}</strong></div>
+        <div><strong>${item.price}</strong></div>
         <div><strong>Description: {item.description}</strong></div>
         
       </div>
