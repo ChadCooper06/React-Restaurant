@@ -53,7 +53,7 @@ export default function Dishes() {
   );
 }
 
-//{items.map((item, idx) => <Dish key={item.id} idx={idx} item={item} />)}
+//displays the menu items I have limited via filter to be those above a certain price
 const HouseFavorites = ({ item }) => {
   return (
     

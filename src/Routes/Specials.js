@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { getLocalStorage, setLocalStorage } from '../Utils/localStorage';
 import { getData } from '../Utils/data';
 
+    //the specials menu gets data from the API and shows only vietnamese items below a set price
+
 export default function Specials() {
   
   const URL = 'https://sheltered-refuge-85246.herokuapp.com/api/json'
@@ -43,7 +45,7 @@ export default function Specials() {
       </div>
   );
 }
-//{items.map(item => <Special key={item.id} item={item} />)}
+//filters the items to be by cuisine and label then parses them to show those less than a specified price and displays them
 
 const Special = ({ item }) => {
     
