@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Hero from './Routes/Home';
 
 
 export default function App() {
@@ -15,56 +16,69 @@ export default function App() {
         justifyContent: 'space-around',
         position: 'relative',
         width: '100%',
-        backgroundColor: 'lightgreen',
+        backgroundColor: '#eab37a',
         margin: '0',
       }}
       >
         <>
         <div>
           <h1 style={{
+            fontFamily: 'cursive',
+            fontSize: '35px',
             fontWeight: 'bold',
             alignSelf: 'start',
-            
+            textShadow: '1px 1px grey',
+            color: '#FF372D',
+            margin: '10px',
             }}>AC</h1>
         </div>
-        <div>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/Menu">Menu</Link> |{" "}
-          <Link to="/Specials">Specials</Link> |{" "}
+        <div className='buttons'>
+          <Link to="/"><button>Home</button></Link> {" "}
+          <Link to="/Menu"><button>Menu</button></Link> {" "}
+          <Link to="/Specials"><button>Specials</button></Link> {" "}
 
         </div>
         </>
       </nav>
-      
       <Outlet />
     </div>
-    <Hero />
+    <div>
+      <Hero />
+    </div>
+    <footer>
+      <p style={{
+        margin: '0',
+        fontSize: '20px',
+        backgroundColor: '#EAB37A',
+        textAlign: 'center',
+      }}>Copyright 2022. This site made with React by Awesome Inc. student.</p>
+    </footer>
     </>
   );
 }
     
 
-function Hero() {
-  return (
-  <div className="hero-image">
-        <div 
-        className="hero-text"
-        style={{
-          height: '60vh',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          color: 'white',
-          backgroundImage: 'url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")',
-          margin: '0',
+// function Hero() {
+//   return (
+//   <div className="hero-image">
+//         <div 
+//         className="hero-text"
+//         style={{
+//           height: '75vh',
+//           backgroundPosition: 'center',
+//           backgroundSize: 'cover',
+//           backgroundRepeat: 'no-repeat',
+//           color: 'white',
+//           backgroundImage: 'url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")',
+//           margin: '0',
+//           textAlign: 'center',
         
-        
-        }}>
-          <h1 style={{margin: '0'}}>Awesome Cuisine</h1>
-          <p>348 E Main St Lexington KY</p>
-            <p>(xxx)xxx-xxxx</p>
-            <p>M-F 11-9 S-S 11-10</p>
-        </div>
-      </div>
-  )
-}
+//         }}>
+//           <h1 style={{margin: '0'}}>Awesome Cuisine</h1>
+//           <h2>348 E Main St Lexington KY</h2>
+//             <h2>(xxx)xxx-xxxx</h2>
+//             <h2>M-F 11-9 S-S 11-10</h2>
+//         </div>
+//       </div>
+//   )
+// }
