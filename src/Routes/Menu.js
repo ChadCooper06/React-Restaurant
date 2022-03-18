@@ -42,7 +42,8 @@ export default function Dishes() {
             fontSize: '40px',
           }}>Menu Items</h1>
           <div className="list" style={{ maxwidth: '600px' }}>
-            {items.map((item, idx) => <Dish key={item.id} idx={idx} item={item} />)}
+            {items.filter(item => item.category.title === 'House Favorites' && parseFloat(item.price) > 10.00)
+            .map(item => <HouseFavorites key={item.id} item={item} />)}
             <div>
             </div>
           </div>
@@ -51,10 +52,9 @@ export default function Dishes() {
     </main>
   );
 }
-//{items.filter((item) => item.category.title === 'House Favorites' && item.category.price > "15.00")
-//.map((item) => <HouseFavorites key={item.id} item={item} />)}
 
-const Dish = ({ item }) => {
+//displays the menu items I have limited via filter to be those above a certain price
+const HouseFavorites = ({ item }) => {
   return (
     
     <div className='card col-3'>
