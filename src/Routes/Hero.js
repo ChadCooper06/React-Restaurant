@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'App'
+
 //this is the hero at the top of the home page displaying name
 export default function Hero() {
     return (

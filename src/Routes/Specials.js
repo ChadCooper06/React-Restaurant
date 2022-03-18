@@ -64,7 +64,8 @@ const Special = ({ item }) => {
           <div style={{
             paddingLeft: '5px',
             color: 'darkgrey',
-            textAlign: 'center'
+            textAlign: 'center',
+            marginBottom: '30px',
           }}><strong>{item.description}</strong></div>
         </div>
         </div>

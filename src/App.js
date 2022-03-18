@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import Hero from './Routes/Home';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import Hero from './Routes/Hero';
 
-    //the nav bar shows on every page and links to the various routes 
+//the nav bar shows on every page and links to the various routes 
 export default function App() {
+  // Gets location object with hook.
+  const location = useLocation();
   return (
     <>
       <div>
@@ -18,32 +20,36 @@ export default function App() {
             backgroundColor: '#E5A561',
             margin: '0',
           }}
-          >
-            <>
-              <div>
-                <h1 style={{
-                  fontFamily: 'cursive',
-                  fontSize: '35px',
-                  fontWeight: 'bold',
-                  alignSelf: 'start',
-                  textShadow: '1px 1px white',
-                  color: '#FF372D',
-                  margin: '10px',
-                  }}>AC</h1>
-              </div>
-              <div className='buttons'>
-                <Link to="/"><button>Home</button></Link> {" "}
-                <Link to="/Menu"><button>Menu</button></Link> {" "}
-                <Link to="/Specials"><button>Specials</button></Link> {" "}
+        >
+          <>
+            <div>
+              <h1 style={{
+                fontFamily: 'cursive',
+                fontSize: '35px',
+                fontWeight: 'bold',
+                alignSelf: 'start',
+                textShadow: '1px 1px white',
+                color: '#FF372D',
+                margin: '10px',
+              }}>AC</h1>
+            </div>
+            <div className='buttons'>
+              <Link to="/"><button>Home</button></Link> {" "}
+              <Link to="/Menu"><button>Menu</button></Link> {" "}
+              <Link to="/Specials"><button>Specials</button></Link> {" "}
+            </div>
+          </>
+        </nav>
+      </div>
 
-              </div>
-            </>
-          </nav>
+      {/* Display the hero on the homepage only */}
+      {location.pathname === "/" && <Hero />}
+
+      {/* Outlet is the same as using the props.children  */}
+      <div className="main-content">
         <Outlet />
       </div>
-      <div>
-        <Hero />
-      </div>
+
       <footer>
         <p style={{
           margin: '0',
