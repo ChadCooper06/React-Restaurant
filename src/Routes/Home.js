@@ -19,8 +19,9 @@ export default function Hero() {
           }}>
             <h1 style={{
                 margin: '0',
-                textShadow: '2px 2px grey',
-                fontSize: '80px',
+                paddingTop: '10px',
+                textShadow: '3px 3px grey',
+                fontSize: '90px',
                 fontFamily: 'cursive',
                 }}>Awesome Cuisine</h1>
           </div>
