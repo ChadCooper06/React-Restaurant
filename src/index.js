@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter,
+  HashRouter as Router,
   Route,
   Routes
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ const rootElement = document.getElementById('root')
 
 ReactDOM.render(
   
-  <BrowserRouter>
+  <Router>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="Home" element={<Home />} />
@@ -24,6 +24,6 @@ ReactDOM.render(
         <Route path="Specials" element={<Specials />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </Router>,
   rootElement
 );
