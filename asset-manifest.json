@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-restaurant-gh-pages/static/css/main.6e140247.css",
-    "main.js": "/react-restaurant-gh-pages/static/js/main.71c3ea6d.js",
-    "index.html": "/react-restaurant-gh-pages/index.html",
-    "main.6e140247.css.map": "/react-restaurant-gh-pages/static/css/main.6e140247.css.map",
-    "main.71c3ea6d.js.map": "/react-restaurant-gh-pages/static/js/main.71c3ea6d.js.map"
+    "main.css": "/ChadCooper06/react-restaurant/static/css/main.6e140247.css",
+    "main.js": "/ChadCooper06/react-restaurant/static/js/main.d5c17748.js",
+    "index.html": "/ChadCooper06/react-restaurant/index.html",
+    "main.6e140247.css.map": "/ChadCooper06/react-restaurant/static/css/main.6e140247.css.map",
+    "main.d5c17748.js.map": "/ChadCooper06/react-restaurant/static/js/main.d5c17748.js.map"
   },
   "entrypoints": [
     "static/css/main.6e140247.css",
-    "static/js/main.71c3ea6d.js"
+    "static/js/main.d5c17748.js"
   ]
 }
