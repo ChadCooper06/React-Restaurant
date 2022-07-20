@@ -16,7 +16,7 @@ const rootElement = document.getElementById('root')
 
 ReactDOM.render(
   
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="Home" element={<Home />} />
