@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ const rootElement = document.getElementById('root')
 
 ReactDOM.render(
   
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="Home" element={<Home />} />
