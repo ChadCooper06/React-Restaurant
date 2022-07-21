@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="Home" element={<Home />} />
         <Route path="Menu" element={<Menu />} />
         <Route path="Specials" element={<Specials />} />
-      </Route>
+      {/* </Route> */}
     </Routes>
   </Router>,
   rootElement
