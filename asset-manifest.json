@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ChadCooper06/react-restaurant/static/css/main.6e140247.css",
-    "main.js": "/ChadCooper06/react-restaurant/static/js/main.3835b6ab.js",
-    "index.html": "/ChadCooper06/react-restaurant/index.html",
-    "main.6e140247.css.map": "/ChadCooper06/react-restaurant/static/css/main.6e140247.css.map",
-    "main.3835b6ab.js.map": "/ChadCooper06/react-restaurant/static/js/main.3835b6ab.js.map"
+    "main.css": "/ChadCooper06.github.io/react-restaurant/static/css/main.6e140247.css",
+    "main.js": "/ChadCooper06.github.io/react-restaurant/static/js/main.3835b6ab.js",
+    "index.html": "/ChadCooper06.github.io/react-restaurant/index.html",
+    "main.6e140247.css.map": "/ChadCooper06.github.io/react-restaurant/static/css/main.6e140247.css.map",
+    "main.3835b6ab.js.map": "/ChadCooper06.github.io/react-restaurant/static/js/main.3835b6ab.js.map"
   },
   "entrypoints": [
     "static/css/main.6e140247.css",
